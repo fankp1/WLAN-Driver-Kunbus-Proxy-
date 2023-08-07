@@ -20,6 +20,6 @@
 
     - name: "Clone the AWX APM repository"
       git:
-        repo: https://github.com/fankp1/AWX_APM.git
-        dest: /home/pi/APM_AWX
+        repo: https://github.com/fankp1/WLAN-Driver-Kunbus-Proxy-.git
+        dest: /home/pi/wlan_driver
         clone: yes
