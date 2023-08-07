@@ -18,6 +18,12 @@
         name:  raspberrypi-kernel-headers
         state: present
 
+    - name: "Install the DKMS library which will be used to install the driver"
+      become: yes
+      apt:
+        name: dkms
+        state: present
+
     - name: "Clone the AWX APM repository"
       git:
         repo: https://github.com/fankp1/WLAN-Driver-Kunbus-Proxy-.git
