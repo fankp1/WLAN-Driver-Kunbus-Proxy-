@@ -29,3 +29,7 @@
         repo: https://github.com/fankp1/WLAN-Driver-Kunbus-Proxy-.git
         dest: /home/pi/wlan_driver
         clone: yes
+
+    - name: "Execute the installation bash script for the driver"
+      shell: "bash /home/pi/wlan_driver/install_wifi.sh"
+
